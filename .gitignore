@@ -9,3 +9,9 @@ video/*/out/
 *.last.txt
 .vercel
 .env*
+
+# agent instruction files stay local
+CLAUDE.md
+**/CLAUDE.md
+CLAUDE.local.md
+.claude/
