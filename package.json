@@ -9,8 +9,7 @@
   },
   "scripts": {
     "sync": "node scripts/sync-assets.mjs && node scripts/sync-vendor.mjs",
-    "serve": "node ../../../../.claude/plugins/cache/nateherk/nateherk-design/0.3.1/skills/scroll-craft/scripts/serve.mjs --root . --port 4500",
-    "shoot": "node ../../../../.claude/plugins/cache/nateherk/nateherk-design/0.3.1/skills/scroll-craft/scripts/shoot.mjs --url http://localhost:4500 --out scrollcraft/lab/shots"
+    "serve": "node scripts/serve.mjs"
   },
   "devDependencies": {
     "gsap": "^3.13.0",
