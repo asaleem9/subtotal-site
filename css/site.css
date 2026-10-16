@@ -135,9 +135,30 @@ img[width][height] { height: auto; }
   .scene { width: min(100%, 60svh); }
   .hero__meta { display: none; }
 }
+/* The engine's spotlight glow is a square clipped to the scene box, which reads as
+   its own layer over Octo. Keep the pointer feed (--sc-mx/--sc-my) and paint the
+   light where it belongs instead: on the paper sheet, and on Octo through his own
+   alpha so the warmth sits inside the drawing. */
+.scene::after { display: none; }
+.scene__paper::after, .scene__octo-plane::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  opacity: 0; transition: opacity var(--sc-d-slow) var(--sc-ease-out);
+}
+.scene__paper::after {
+  border-radius: inherit;
+  background: radial-gradient(22rem 22rem at calc(var(--sc-mx, 0.5) * 100%) calc(var(--sc-my, 0.5) * 100%),
+    color-mix(in oklab, #fff 42%, transparent), transparent 70%);
+}
+.scene__octo-plane::after {
+  background: radial-gradient(16rem 16rem at calc(var(--sc-mx, 0.5) * 100%) calc(var(--sc-my, 0.5) * 100%),
+    color-mix(in oklab, var(--sc-accent) 14%, transparent), transparent 70%);
+  mask: url(/assets/octo/octo-hero-400.webp) center / contain no-repeat;
+  -webkit-mask: url(/assets/octo/octo-hero-400.webp) center / contain no-repeat;
+}
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
   .scene[data-sc-spotlight] .scene__octo-plane { transform: translate(calc((var(--sc-mx, 0.5) - 0.5) * -10px), calc((var(--sc-my, 0.5) - 0.5) * -8px)); }
   .scene[data-sc-spotlight] .scene__tiles { transform: translate(calc((var(--sc-mx, 0.5) - 0.5) * 16px), calc((var(--sc-my, 0.5) - 0.5) * 12px)); }
+  .scene:hover .scene__paper::after, .scene:hover .scene__octo-plane::after { opacity: 1; }
 }
 
 /* ---- act 2: the argument ---------------------------------------------------- */
