@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy · Subtotal</title>
+<meta name="description" content="Subtotal collects nothing. Here is what that means in practice.">
+<meta name="theme-color" content="#F4EFE6">
+<link rel="icon" href="/assets/apple-touch-icon.png" type="image/png">
+<link rel="stylesheet" href="/engine/scrollcraft.css">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<div class="sc-grain" aria-hidden="true"></div>
+<main class="page">
+  <header class="hero__head">
+    <a class="wordmark" href="/" style="text-decoration:none;color:inherit">Subtotal</a>
+    <span class="stamp-label">Privacy policy</span>
+  </header>
+  <img class="page__octo" src="/assets/octo/octo-sleep-400.webp" width="400" height="400" alt="">
+  <h1>Privacy policy</h1>
+  <p><time datetime="2026-10-16">Last updated October 16, 2026</time></p>
+  <p>Subtotal is a subscription tracker for iPhone and iPad. Everything you enter stays on your device and, if you have iCloud turned on, in your own iCloud account. There is no Subtotal server, no account to sign up for, and nothing in the app phones home.</p>
+
+  <h2>What the app collects</h2>
+  <div class="leader-row leader-row--memo"><span class="leader-row__label">Personal information</span><span class="leader-row__dots"></span><span class="leader-row__amount">none</span></div>
+  <div class="leader-row leader-row--memo"><span class="leader-row__label">Bank or card details</span><span class="leader-row__dots"></span><span class="leader-row__amount">none, there is no linking</span></div>
+  <div class="leader-row leader-row--memo"><span class="leader-row__label">Analytics or crash reporting SDKs</span><span class="leader-row__dots"></span><span class="leader-row__amount">none</span></div>
+  <div class="leader-row leader-row--memo"><span class="leader-row__label">Advertising identifiers</span><span class="leader-row__dots"></span><span class="leader-row__amount">none</span></div>
+  <div class="leader-row leader-row--memo"><span class="leader-row__label">Network requests made by the app</span><span class="leader-row__dots"></span><span class="leader-row__amount">only iCloud sync, through Apple</span></div>
+  <p style="margin-top:1rem">The subscriptions you add, their prices, plans and renewal dates, are stored in a local database on your device. The catalog of services and logos ships inside the app, so searching it never leaves your phone.</p>
+
+  <h2>iCloud sync</h2>
+  <p>If iCloud is on for Subtotal, your ledger is stored in your private iCloud database so it shows up on your other devices. Apple handles that storage under your Apple Account and <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a>. The app’s maker has no access to it. Turn iCloud off for Subtotal in Settings and the ledger stays only on the device.</p>
+
+  <h2>Notifications</h2>
+  <p>Renewal reminders are local notifications scheduled on your device. Nothing is sent to a server to deliver them. You can decline the permission or turn reminders off in the app at any time.</p>
+
+  <h2>Export</h2>
+  <p>You can export your ledger as a CSV file. Where that file goes after that is up to you.</p>
+
+  <h2>This website</h2>
+  <p>This site has no analytics, no cookies, and loads fonts from its own files rather than a third party. The “build yours” tool keeps your picks in your browser’s local storage, on your device only; clearing site data removes them. The host, Vercel, keeps standard server access logs to run the service.</p>
+
+  <h2>Children</h2>
+  <p>Subtotal is not directed at children under 13 and collects no information from anyone.</p>
+
+  <h2>Changes</h2>
+  <p>If any of this changes, the date at the top changes with it, and anything material will be called out in the app’s release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions go to <a data-support-email href="#">support</a>.</p>
+  <footer class="foot">
+    <a href="/">Home</a>
+    <a href="/privacy">Privacy</a>
+    <a href="/support">Support</a>
+    <p class="foot__legal">Logos belong to their owners and appear only to identify each service. Brand glyphs are from Simple Icons (CC0).</p>
+  </footer>
+</main>
+<script type="module">
+  import { APP_STORE_URL, SUPPORT_EMAIL, CTA_LABEL } from "/js/site-config.js";
+  document.querySelectorAll("[data-cta]").forEach((a) => { a.href = APP_STORE_URL; a.textContent = CTA_LABEL; });
+  document.querySelectorAll("[data-support-email]").forEach((a) => { a.href = "mailto:" + SUPPORT_EMAIL; a.textContent = SUPPORT_EMAIL; });
+</script>
+</body>
+</html>

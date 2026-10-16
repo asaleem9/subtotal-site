@@ -1,0 +1,20 @@
+{
+  "name": "subtotal-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Marketing site for Subtotal, the free iOS subscription tracker.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "sync": "node scripts/sync-assets.mjs && node scripts/sync-vendor.mjs",
+    "serve": "node ../../../../.claude/plugins/cache/nateherk/nateherk-design/0.3.1/skills/scroll-craft/scripts/serve.mjs --root . --port 4500",
+    "shoot": "node ../../../../.claude/plugins/cache/nateherk/nateherk-design/0.3.1/skills/scroll-craft/scripts/shoot.mjs --url http://localhost:4500 --out scrollcraft/lab/shots"
+  },
+  "devDependencies": {
+    "gsap": "^3.13.0",
+    "playwright-core": "^1.50.0",
+    "sharp": "^0.35.5"
+  }
+}

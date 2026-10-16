@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Support · Subtotal</title>
+<meta name="description" content="Help with Subtotal, the free iPhone subscription tracker.">
+<meta name="theme-color" content="#F4EFE6">
+<link rel="icon" href="/assets/apple-touch-icon.png" type="image/png">
+<link rel="stylesheet" href="/engine/scrollcraft.css">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<div class="sc-grain" aria-hidden="true"></div>
+<main class="page">
+  <header class="hero__head">
+    <a class="wordmark" href="/" style="text-decoration:none;color:inherit">Subtotal</a>
+    <span class="stamp-label">Support</span>
+  </header>
+  <img class="page__octo" src="/assets/octo/octo-wave-400.webp" width="400" height="400" alt="">
+  <h1>Support</h1>
+  <p>Subtotal is made by one person, so you get the person. Email <a data-support-email href="#">support</a> with what happened and which device you’re on, and you’ll get a reply from the same inbox that ships the updates.</p>
+
+  <h2>Things people ask</h2>
+  <div class="leader-row"><span class="leader-row__label">Is it really free?</span><span class="leader-row__dots"></span><span class="leader-row__amount">yes</span></div>
+  <p style="margin-top:0.75rem">No trial, no Pro tier, nothing unlocked by paying. Everything in the app is in the free app because there is only the one.</p>
+
+  <div class="leader-row"><span class="leader-row__label">Does it connect to my bank?</span><span class="leader-row__dots"></span><span class="leader-row__amount">no</span></div>
+  <p style="margin-top:0.75rem">You add subscriptions by picking them from the catalog or typing a name. That is the whole method, and it is why the app has nothing worth stealing.</p>
+
+  <div class="leader-row"><span class="leader-row__label">The price in the catalog is wrong.</span><span class="leader-row__dots"></span><span class="leader-row__amount">edit it</span></div>
+  <p style="margin-top:0.75rem">Catalog prices are US list prices as of October 2026 and they are only suggestions. Every amount, plan and date is editable on the subscription’s receipt. If a price is plainly out of date, email and it gets fixed in the next catalog update.</p>
+
+  <div class="leader-row"><span class="leader-row__label">A service I pay for isn’t in the catalog.</span><span class="leader-row__dots"></span><span class="leader-row__amount">add it anyway</span></div>
+  <p style="margin-top:0.75rem">Search for it, then choose “Add” with the name you typed. Custom services get a name, a price, a category and an icon, and they count toward the subtotal like anything else. Send the name along and it may show up in the catalog later.</p>
+
+  <div class="leader-row"><span class="leader-row__label">My ledger isn’t on my other device.</span><span class="leader-row__dots"></span><span class="leader-row__amount">check iCloud</span></div>
+  <p style="margin-top:0.75rem">Sync goes through your own iCloud. Make sure both devices are signed in to the same Apple Account and that iCloud is on for Subtotal in Settings. It can take a minute after a change.</p>
+
+  <div class="leader-row"><span class="leader-row__label">I deleted something by mistake.</span><span class="leader-row__dots"></span><span class="leader-row__amount">undo, quickly</span></div>
+  <p style="margin-top:0.75rem">A delete shows an Undo button for a few seconds. After that it is gone, which is why archiving exists: an archived subscription drops out of the total but stays in the list.</p>
+
+  <h2>Requirements</h2>
+  <p>iPhone or iPad running iOS 26 or later. It also runs on the iPhone Duo, where the ledger opens into a two-page book.</p>
+
+  <p style="margin-top:2.5rem"><a class="stamp" href="#" data-cta>Get Subtotal</a></p>
+  <footer class="foot">
+    <a href="/">Home</a>
+    <a href="/privacy">Privacy</a>
+    <a href="/support">Support</a>
+    <p class="foot__legal">Logos belong to their owners and appear only to identify each service. Brand glyphs are from Simple Icons (CC0).</p>
+  </footer>
+</main>
+<script type="module">
+  import { APP_STORE_URL, SUPPORT_EMAIL, CTA_LABEL } from "/js/site-config.js";
+  document.querySelectorAll("[data-cta]").forEach((a) => { a.href = APP_STORE_URL; a.textContent = CTA_LABEL; });
+  document.querySelectorAll("[data-support-email]").forEach((a) => { a.href = "mailto:" + SUPPORT_EMAIL; a.textContent = SUPPORT_EMAIL; });
+</script>
+</body>
+</html>

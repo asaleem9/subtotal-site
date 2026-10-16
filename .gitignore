@@ -1,0 +1,9 @@
+node_modules/
+scrollcraft/lab/
+scrollcraft/builds/*/lab/
+video/*/node_modules/
+video/*/.hyperframes/
+video/*/out/
+.vercel/
+.DS_Store
+*.last.txt

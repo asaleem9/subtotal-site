@@ -1,0 +1,26 @@
+{
+ "style": "STYLE: Flat vector illustration with a hand-printed, risograph / screen-print feel. Ink-black linework (#1C1A17) with slightly imperfect, confident strokes. One accent color only: stamp red (#D7362B); a little muted teal (#2F6F73) is allowed. Subtle paper grain and faint ink misregistration, like a cheap printed receipt. No gradients, no 3D rendering, no glossy highlights, no drop shadows, no photo textures, and absolutely NO text, letters, numbers or watermarks. Clean silhouette, readable at small sizes. CHARACTER: Octo, a friendly, slightly sleepy octopus with a round head, big half-lidded eyes, a small content smile, and eight expressive arms with suction cups drawn as little dots. Body is paper-cream (#F4EFE6) with stamp-red cheeks, outlined in ink black. A mascot stamped onto a ledger, not a kids' cartoon. No hat, glasses or accessories unless stated.",
+ "assets": [
+  {
+   "name": "octo-hero",
+   "size": 1024,
+   "transparent": true,
+   "reference": false,
+   "prompt": "(master reference, copied from the app; never regenerated here)"
+  },
+  {
+   "name": "octo-write",
+   "size": 1024,
+   "transparent": true,
+   "reference": true,
+   "prompt": "Octo concentrating, writing on a long paper receipt: one arm holds a short wooden pencil (ink outline, no text on it) and has just drawn one short ink dash on the receipt; the receipt is tall, hangs down in front of Octo and trails off the bottom of the frame with a zig-zag torn top edge, three short ink dashes as existing line items above the new one. Two other arms hold the top corners of the receipt flat. Tongue tip slightly out at the corner of the mouth, eyes looking down at the pencil, focused and happy. Centered with 10% padding."
+  },
+  {
+   "name": "octo-printer",
+   "size": 1024,
+   "transparent": true,
+   "reference": true,
+   "prompt": "Octo sitting beside a small boxy thermal receipt printer (simple ink-outlined box with a slot on top, paper-cream body, one stamp-red button, no text or logos), a long receipt curling up and out of the slot with a zig-zag torn end and several short ink dashes as line items. One arm pats the printer, two arms hold the curling paper, the other arms rest. Mild surprise, eyebrows up, small open-mouth smile as if the receipt keeps coming. Centered with 10% padding."
+  }
+ ]
+}
