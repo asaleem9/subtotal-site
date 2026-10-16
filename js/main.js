@@ -63,15 +63,19 @@ function tick() {
 }
 requestAnimationFrame(tick);
 
-// Keyboard: the picker lives on a pinned act, so focusing the field parks the act where the
-// stage is fully on screen (the browser's own scroll-into-view would park it at progress 0).
-const build = document.getElementById("build");
-document.getElementById("catalog-search")?.addEventListener("focus", () => {
-  const rect = build.getBoundingClientRect();
-  const travel = rect.height - innerHeight;
-  const target = scrollY + rect.top + travel * 0.25;
+// Keyboard: controls that live on pinned acts. The browser's own scroll-into-view parks a
+// sticky stage at progress 0, where its cues are still closed, so on focus we park the act at a
+// progress where the control's cue is open instead.
+function parkPinnedAct(control, progress) {
+  const act = control.closest('[data-sc-act="pin"]');
+  if (!act) return;
+  const rect = act.getBoundingClientRect();
+  const travel = Math.max(1, rect.height - innerHeight);
+  const target = scrollY + rect.top + travel * progress;
   if (Math.abs(target - scrollY) > 4) scrollTo({ top: target, behavior: "instant" });
-});
+}
+document.getElementById("catalog-search")?.addEventListener("focus", (e) => parkPinnedAct(e.target, 0.25));
+document.querySelectorAll("#total [data-cta], #total .foot a").forEach((el) => el.addEventListener("focus", (e) => parkPinnedAct(e.target, 0.6)));
 
 // Hero/clip posters and the tape total also read the restored state on load.
 if (tape.restored) picker?.refresh();

@@ -7,3 +7,5 @@ video/*/out/
 .vercel/
 .DS_Store
 *.last.txt
+.vercel
+.env*

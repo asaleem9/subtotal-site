@@ -154,7 +154,7 @@ img[width][height] { height: auto; }
 /* ---- act 3: the clip ----------------------------------------------------------- */
 .clip-copy h2 { font-family: var(--sc-font-display); font-weight: 600; font-size: var(--sc-t-3xl); line-height: 1; letter-spacing: -0.02em; margin: 0 0 0.75rem; }
 .clip-copy p { font-size: var(--sc-t-lg); line-height: 1.45; max-width: 26rem; margin: 0; color: var(--sc-ink); }
-.sc-scrim--paper { background: radial-gradient(ellipse at 18% 50%, rgba(244, 239, 230, 0.95) 0 28%, rgba(244, 239, 230, 0) 62%); }
+.sc-scrim--paper { background: linear-gradient(90deg, rgba(244, 239, 230, 0.98) 0 57%, rgba(244, 239, 230, 0) 71%); }
 @media (max-width: 860px) { .sc-scrim--paper { background: linear-gradient(to top, rgba(244, 239, 230, 0.96) 0 36%, rgba(244, 239, 230, 0) 62%); } }
 
 /* ---- act 4: the facts ------------------------------------------------------------ */

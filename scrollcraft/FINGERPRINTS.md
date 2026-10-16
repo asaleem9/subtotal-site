@@ -28,6 +28,7 @@ changes only grammar and world will fail it.
 
 | Build | Grammar | Nav treatment | Hero device | Act-sequence shape | Close pattern | Signature move | World | Port |
 |---|---|---|---|---|---|---|---|---|
+| subtotal-site (2026-10-16) | Printed receipt (new): line items on one sheet, hard cut to a carbon ground for one act | No bar. A fixed running receipt ("the tape") in the right margin / bottom strip that accumulates lines as acts pass, doubles as nav, becomes the visitor's own ledger | Natural-flow layered illustration: paper, Octo cutout, HTML logo tiles over the drawn cards, pointer parallax; no pin, no clip | flow › pin › scrub › flow › pin (peak, picker) › pan › pin; 7 acts, 14.0vh | TOTAL row that shows the visitor's own number, a torn perforation driven by --sc-p, the CTA as a rotated rubber stamp; footer inside the stage | The running tape + "build yours": search the app's real 587-service catalog, picks print onto the tape and the subtotal rolls; persists in localStorage | Flat risograph illustration (the brand's own), paper ground, one stamp-red accent | Desktop 1440 + 390 phone + reduced motion |
 
 *(empty: your first build has nothing to clear, so build whatever the interview
 points at. From the second onwards, this table is the constraint.)*
