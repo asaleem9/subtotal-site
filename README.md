@@ -1,6 +1,6 @@
 # subtotal-site
 
-The marketing site for [Subtotal](https://github.com/asaleem9/subtotal), a free iOS subscription
+The marketing site at [subtotal.blog](https://subtotal.blog) for [Subtotal](https://github.com/asaleem9/subtotal), a free iOS subscription
 tracker. One long receipt: the page prints top to bottom, a running tape in the margin adds up
 line items as you scroll, and at the peak you build your own ledger from the app's real catalog.
 
